@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "Pix2d.Browser.dll",
   "resources": {
-    "hash": "sha256-xWMntYWesJszGshfu+TmR15ThkwTy+CoIJcZn/gO/gg=",
+    "hash": "sha256-Gf2UW9aS8ilhuQsLkAmSzP3sObLS/8yfexmxVFGHffY=",
     "jsModuleNative": {
       "dotnet.native.js": "sha256-JUzENJojd4v1755wc/x1fh9zgIjxskB0xt36Glg9B0I="
     },
@@ -218,13 +218,13 @@
       "netstandard.wasm": "sha256-YOZxxR9PM3Dltcijfb0Q4FD39DkWZbZ1e2ScbZDvWJ4=",
       "System.Private.CoreLib.wasm": "sha256-NrT1QkAzVU//2wgK9vXdq77lCGvLJ4IOZ+Aegesyanc=",
       "Avalonia.Markup.Declarative.wasm": "sha256-WWnehXdQWImbrlSZ5ZOETOaLul0YtvUHlr58DK2pdbs=",
-      "Pix2d.Core.wasm": "sha256-A9zvhPHvvBtZbuZdVrMctNQLceodj1GTfqv6eAW6ck8=",
-      "Pix2d.Plugins.Ai.wasm": "sha256-VH3FaKaDgnGxkMOiqnN8q1KjpA5C4u9vp/ufpRB14R0=",
-      "Pix2d.Plugins.Drawing.wasm": "sha256-2m40d7xzMk75nH+fpxoLjSz6oyP44Ug5Rbr3snUB+7E=",
-      "Pix2d.Plugins.PixelText.wasm": "sha256-5Y4u1T4RoEMqpSY9TMhBPx+8CYeNmylcWmEwhvGiXWI=",
+      "Pix2d.Core.wasm": "sha256-/xjQcjbj3TWDN2VDRtbZwL1vAmHH8l9JrsTEehhVfNY=",
+      "Pix2d.Plugins.Ai.wasm": "sha256-3ifDccIByPS7nr4JLySUbODygEX9oskauAFPz/xcIIU=",
+      "Pix2d.Plugins.Drawing.wasm": "sha256-Ei2dLPRNKrogaAEWBdHAjil8p+OHJBkBmxEZ7tddG0w=",
+      "Pix2d.Plugins.PixelText.wasm": "sha256-ru9EHHrx3V7qOJMUADXGZXcnuYPEcn2WJgarTTGaFzY=",
       "Pix2d.Shared.wasm": "sha256-f875uPcRYJVfflDK3ma+h4cAW8vQcJneX/T3jcG+6YU=",
-      "Pix2d.UI.wasm": "sha256-9iUnt+cyh+F76+iR8kngDA+H68jYqv9lygvOvbg1Xw4=",
-      "Pix2d.Browser.wasm": "sha256-EGvF/peALRVAKATnLtw63Xe8U5L50e0SJ4+Of9+u1a8="
+      "Pix2d.UI.wasm": "sha256-6v5eFK1sFCYemG3lyV80hewLXj4LkvtSC406ntS8Phk=",
+      "Pix2d.Browser.wasm": "sha256-hRNNIZbec+k7EHPm4ORu3k4zaqaGuBTUB3mdBF/5SN4="
     },
     "vfs": {
       "runtimeconfig.bin": {
