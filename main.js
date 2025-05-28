@@ -1,15 +1,19 @@
-﻿import { dotnet } from './dotnet.js'
-import CommonStuff from './CommonStuff.js'
+import { dotnet } from './_framework/dotnet.js'
+import CommonStuff from './commonStuff.js'
+
+document.addEventListener('DOMContentLoaded', () => {
+    CommonStuff.startLoaderProgressbar();
+});
 
 const is_browser = typeof window != "undefined";
 if (!is_browser) throw new Error(`Expected to be running in a browser`);
 
-CommonStuff.startLoaderProgressbar();
-
-const { dotnetRuntime, setModuleImports, getConfig } = await dotnet
+const dotnetRuntime = await dotnet
     .withDiagnosticTracing(false)
     .withApplicationArgumentsFromQuery()
     .create();
+
+const { setModuleImports } = dotnetRuntime;
 
 setModuleImports("main.js", {
     appStarted: () => CommonStuff.onAppStarted(),
@@ -22,9 +26,6 @@ setModuleImports("main.js", {
     clear: (key) => localStorage.clear()
 });
 
-//const config = dotnetRuntime.getConfig();
-const config = getConfig();
+const config = dotnetRuntime.getConfig();
 
-//await dotnetRuntime.runMainAndExit(config.mainAssemblyName, [window.location.search]);
-await dotnet.run();
-
+await dotnetRuntime.runMain(config.mainAssemblyName, [globalThis.location.href]);

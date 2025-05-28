@@ -108,10 +108,10 @@
     background: #555;
     padding: 0;
     margin-top: -4px;
-    width:130px;
+    width: 130px;
 }
 
-    .progressbar > span#progress-value {
+    .progressbar #progress-value {
         display: block;
         height: 100%;
         width: 0%;
@@ -120,8 +120,8 @@
         overflow: hidden;
     }
 
-    #progress-text {
-        font-size: 10pt;
-        text-align: center;
-        color: white;
-    }
+#progress-text {
+    font-size: 10pt;
+    text-align: center;
+    color: white;
+}

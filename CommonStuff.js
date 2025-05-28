@@ -5,20 +5,20 @@ export default class CommonStuff {
         let progress = 0;
         let maxProgress = 100;
         const timer = setInterval(() => {
-            const d = (maxProgress - progress) / 10;
+            const d = (maxProgress - progress) / 30;
             progress = Math.ceil(progress + d);
 
             const progressBar = document.getElementById("progress-value");
-            console.log(progressBar);
-            if (progressBar !== undefined && progressBar !== null) {
+            //console.log(progressBar);
+            if (progressBar) {
                 progressBar.style.width = `${progress}%`;
             }
-            console.log(progress);
+            //console.log(progress);
 
-            if (timer !== null && progress >= maxProgress) {
+            if (timer !== null && (progress >= maxProgress || !progressBar)) {
                 clearInterval(timer);
             }
-        }, 100);
+        }, 10);
     }
 
     static onAppStarted() {
