@@ -1,5 +1,5 @@
 import { dotnet } from './_framework/dotnet.js'
-import CommonStuff from './commonStuff.js'
+import CommonStuff from './CommonStuff.js'
 
 document.addEventListener('DOMContentLoaded', () => {
     CommonStuff.startLoaderProgressbar();
